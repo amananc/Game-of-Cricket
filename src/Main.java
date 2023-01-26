@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args)
     {
-        Controller.gameStart();
+        GameController.gameStart();
 
-        Controller.playGame();
-        Controller.declareWinner();
+        GameController.playGame();
+        GameController.declareWinner();
 
-        Controller.gameEnd();
+        GameController.gameEnd();
     }
 }

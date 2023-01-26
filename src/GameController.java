@@ -1,4 +1,4 @@
-public class Controller
+public class GameController
 {
     static int team1Score, team2Score, team1BallsPlayed;
     static int team1Wicket, team2Wicket, team2BallsPlayed;
@@ -28,6 +28,7 @@ public class Controller
         // Printing results of first innings
         System.out.println("First Innings : Team1 Playing");
         CalculateScore.getScore(1001);
+
         team1Score = CalculateScore.getCurrentTeamScore();
         team1Wicket = CalculateScore.getCurrentTeamWicket();
         team1BallsPlayed = CalculateScore.getCurrentTeamTotalBallsPlayed();
@@ -40,6 +41,7 @@ public class Controller
         // Printing results of second innings
         System.out.println("Second Innings : Team2 Playing");
         CalculateScore.getScore(team1Score);
+
         team2Score = CalculateScore.getCurrentTeamScore();
         team2Wicket = CalculateScore.getCurrentTeamWicket();
         team2BallsPlayed = CalculateScore.getCurrentTeamTotalBallsPlayed();
