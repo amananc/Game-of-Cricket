@@ -8,20 +8,24 @@ public class GameController
 
         System.out.println("Game of Cricket : Match of 20 Overs");
 
-        Player[] team1 = new Player[11];
+
+
+        Player[] team1 = new Player[11]; // Use proper team variable name
         Player[] team2 = new Player[11];
 
         // Initialising player array
 
-        for(int i = 0; i < 11; i++)
+        for(int i = 0; i < 11; i++) // proper variable name instead of i
         {
-            team1[i] = new Player(GeneratePlayer.generatePlayerName(i), GeneratePlayer.generatePlayerAge(), "team1");
-            team2[i] = new Player(GeneratePlayer.generatePlayerName(i + 11), GeneratePlayer.generatePlayerAge(), "team2");
+            team1[i] = new Player(GeneratePlayer.generatePlayerName(i), GeneratePlayer.generatePlayerAge(), "team1"); // Never use string directly .. define static string first
+            team2[i] = new Player(GeneratePlayer.generatePlayerName(i + 11), GeneratePlayer.generatePlayerAge(), "team2"); // Take input via terminal
         }
     }
 
     public static void playGame()
     {
+
+        // Todo : Use always methods, segregte logic in methods
         // Need to show wickets too... will do it later
         // Need to implement flag to check innings
 

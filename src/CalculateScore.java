@@ -9,7 +9,7 @@ public class CalculateScore
         int totalWicket = 0;
         int totalBallsPlayed = 0;
 
-        for(int i = 0; i < 20; i++)
+        for(int i = 0; i < 20; i++) // change variable name .. with more specific one
         {
             for(int j = 0; j < 6; j++)
             {
