@@ -1,6 +1,15 @@
 public class Main {
     public static void main(String[] args)
     {
-        System.out.println("Game of Cricket");
+
+
+        // Todo: Use Design pattern
+
+        GameController.gameStart();
+
+        GameController.playGame();
+        GameController.declareWinner();
+
+        GameController.gameEnd();
     }
 }
