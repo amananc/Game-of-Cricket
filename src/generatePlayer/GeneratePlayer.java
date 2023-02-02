@@ -1,13 +1,15 @@
+package generatePlayer;
+
 public class GeneratePlayer
 {
-    public static String generatePlayerName(int i)
+    public String generatePlayerName(int i)
     {
         String str = "";
         str += (char)('A' + i);
         return str;
     }
 
-    public static int generatePlayerAge()
+    public int generatePlayerAge()
     {
         int max = 36;
         int min = 20;
